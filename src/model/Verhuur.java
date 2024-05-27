@@ -5,6 +5,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+//Naam, studentennummer en doel
+/* Naam: M.C.
+Studentennummer: 500241293
+De klasse Verhuur beheert de verhuur van boten aan klanten, inclusief informatie over de klant, de boten, de startdatum en de duur van de verhuur. Deze klasse biedt methoden
+om boten toe te voegen, de huurprijs te berekenen en een tekstuele representatie van de verhuur te geven.
+ */
+
 public class Verhuur {
     //attributen
     private Klant klant;
