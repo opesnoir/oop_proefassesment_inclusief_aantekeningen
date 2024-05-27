@@ -1,5 +1,10 @@
 package model;
-
+//Naam, studentennummer en doel
+/* Naam: M.C.
+Studentennummer: 500241293
+Doel: de klasse MotorBoot is een subklasse van Boot en beheert informatie over motorboten, zoals naam, lengte, en maximale snelheid. Deze klasse biedt methoden om
+de huurprijs te berekenen en om te bepalen of een vaarbewijs vereist is. De toString-methode geeft een tekstuele representatie van de motorboot met relevante informatie zoals id, naam, vaarbewijsplicht en huurprijs.
+ */
 public class MotorBoot extends Boot {
     //attribuut
     private int maxSnelheid;
@@ -19,7 +24,7 @@ public class MotorBoot extends Boot {
     //methode
     @Override
     public double berekenHuurprijs() {
-        if (super.getLengte() < GRENS_LENGTE_PRIJSGEVING){
+        if (this.getLengte() < GRENS_LENGTE_PRIJSGEVING){
             return PRIJS_LAAG;
         } else {
             return PRIJS_HOOG;
@@ -29,7 +34,7 @@ public class MotorBoot extends Boot {
     @Override
     public boolean isVaarbewijsPlichtig() {
         // lengte of snelheid boven de desbetreffende grens? dan ben je vaarbewijsplichtig : zo niet dan ben je niet vaarbewijsplichtig.
-        if (super.getLengte() > GRENS_LENGTE_VAARBEWIJS || this.maxSnelheid > GRENS_SNELHEID_VAARBEWIJS) {
+        if (this.getLengte() > GRENS_LENGTE_VAARBEWIJS || this.maxSnelheid > GRENS_SNELHEID_VAARBEWIJS) {
             return true;
         } else {
             return false;
