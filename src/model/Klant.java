@@ -28,6 +28,10 @@ public class Klant {
     }
     //getters setters
 
+    public String getNaam() {
+        return naam;
+    }
+
     //andere methoden
     public boolean isVaarVaardig() {
         return vaarVaardig;
