@@ -7,12 +7,12 @@ De klasse Klant beheert informatie over klanten, zoals naam, email en vaarvaardi
 Deze klasse bevat een methode om vaarvaardigheid te bepalen. De tostring geeft een tekstuele representatie van de klant terug.
 */
 public class Klant {
-    //Attributen
+    //attributen
     private String naam;
     private String email;
     private boolean vaarVaardig;
 
-    //Constructors
+    //constructors
     public Klant() {
         this("onbekend");
     }
@@ -26,9 +26,9 @@ public class Klant {
         this.email = email;
         this.vaarVaardig = vaarVaardig;
     }
+    //getters setters
 
-    //Getters en setters: deze zijn uitsluitend toegevoegd waar nodig. Als ze ontbreken, zijn ze niet nodig voor deze klasse.
-    //Andere methoden
+    //andere methoden
     public boolean isVaarVaardig() {
         return vaarVaardig;
     }
